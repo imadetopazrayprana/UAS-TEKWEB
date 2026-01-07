@@ -1,0 +1,537 @@
+body {
+    font-family: "Quicksand", sans-serif;
+}
+
+
+/* -- Design System -- */
+
+.btn-outline-primary {
+    background-color: transparent;
+    border: 1px solid #33e0ff;
+    color: #33e0ff;
+}
+
+.btn-outline-primary:hover {
+    background-color: #33e0ff;
+    color: white;
+    border-color: transparent;
+}
+
+
+/* --- Navbar --- */
+
+.custom-primary {
+    color: #33e0ff;
+}
+
+.btn-custom-primary {
+    background-color: #33e0ff;
+    border-color: #33e0ff;
+}
+
+.btn-custom-primary:hover {
+    background-color: #33e0ff;
+    border-color: #33e0ff;
+}
+
+.navbar {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav .nav-link {
+    color: #333;
+    font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #33e0ff;
+}
+
+
+/* --- Hero Section --- */
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 70px;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.hero-section p {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.hero-section img {
+    max-width: 100%;
+    max-height: 60vh;
+    width: auto;
+    height: auto;
+    border-radius: 25px;
+}
+
+.btn-find-more {
+    background-color: #33e0ff;
+    color: white;
+}
+
+.btn-find-more:hover {
+    background-color: white;
+    border-color: #33e0ff;
+    color: #33e0ff;
+    /* Tambah warna teks saat hover agar kontras */
+}
+
+
+/* Find Your Best Destination Section */
+
+@media (max-width: 767px) {
+    #find-destination h2 {
+        font-size: 1.8rem;
+    }
+    .destination-card {
+        transform: rotate( 0deg) !important;
+        /* Hilangkan rotasi di layar kecil */
+    }
+}
+
+#find-destination h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1a3c5a;
+    /* Warna biru tua seperti di gambar */
+}
+
+#find-destination p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.search-destination .input-group {
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.search-destination .form-control {
+    border: none;
+    box-shadow: none;
+}
+
+.search-destination .input-group-text {
+    background-color: white;
+    border: none;
+}
+
+.search-destination .btn-find-more {
+    border-radius: 0 25px 25px 0;
+}
+
+.destination-card {
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.destination-card img {
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.destination-card:nth-child(1) {
+    transform: rotate(-5deg);
+}
+
+.destination-card:nth-child(2) {
+    transform: rotate(5deg);
+}
+
+.destination-card:nth-child(3) {
+    transform: rotate(-3deg);
+}
+
+.destination-card:nth-child(4) {
+    transform: rotate(3deg);
+}
+
+.destination-card:hover {
+    transform: rotate(0deg);
+}
+
+.destination-label {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+
+/* Best Vacation Plan Section */
+
+#best-vacation h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1a3c5a;
+}
+
+#best-vacation p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.vacation-card img {
+    border-radius: 15px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.vacation-card .vacation-info {
+    padding: 10px 0;
+}
+
+.vacation-card h5 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.vacation-card .price {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.vacation-card .d-flex span {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+
+/* Ulasan Section (Testimonials Carousel) */
+
+@media (max-width: 767px) {
+    .testimonial-card {
+        padding: 15px;
+    }
+    .testimonial-card .avatar {
+        width: 60px;
+        height: 60px;
+    }
+    .testimonial-card h5 {
+        font-size: 1rem;
+    }
+    .testimonial-card p {
+        font-size: 0.9rem;
+    }
+}
+
+#ulasan h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1a3c5a;
+}
+
+#ulasan p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.testimonial-card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.testimonial-card .avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonial-card h5 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.testimonial-card .rating {
+    color: #33e0ff;
+}
+
+.testimonial-card p {
+    font-size: 1rem;
+    color: #666;
+    font-style: italic;
+}
+
+
+/* Carousel Controls Styling */
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #33e0ff;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #33e0ff;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+
+/* Dokumentasi Section (Galeri) */
+
+.gallery-section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.gallery-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1a3c5a;
+    margin-bottom: 10px;
+}
+
+.gallery-section p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.gallery-grid .col-img {
+    margin-bottom: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #e9ecef;
+    border-radius: 5px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-number {
+    display: block;
+    font-size: 0.9rem;
+    color: #33e0ff;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+
+/* Tentang Kami Section */
+
+.about-section {
+    padding: 50px 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.about-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 25%;
+}
+
+.about-box {
+    background-color: #f8f9fa;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.about-box:hover {
+    background-color: #33e0ff;
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.about-box i {
+    font-size: 2rem;
+    color: #33e0ff;
+    margin-bottom: 10px;
+}
+
+.about-box:hover i {
+    color: white;
+}
+
+.about-box h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.about-box p {
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+
+.about-paragraf {
+    margin-top: 20px;
+}
+
+
+/* Footer Styling */
+
+.footer-section {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+    /* Latar belakang abu-abu muda */
+    text-align: center;
+}
+
+.footer-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1a3c5a;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+
+/* Kontak Info */
+
+.contact-info {
+    margin-bottom: 30px;
+}
+
+.contact-card {
+    background-color: #ffffff;
+    border: 2px solid #33e0ff;
+    /* Border oranye */
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+    min-height: 134px;
+}
+
+.contact-card:hover {
+    background-color: #33e0ff;
+    /* Oranye saat hover */
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contact-card i {
+    font-size: 2rem;
+    color: #33e0ff;
+    margin-bottom: 10px;
+}
+
+.contact-card:hover i {
+    color: white;
+    /* Ikon jadi putih saat hover */
+}
+
+.contact-card span {
+    font-size: 1rem;
+    display: block;
+}
+
+
+/* Formulir */
+
+.contact-form .form-control {
+    border: 2px solid #33e0ff;
+    /* Border oranye */
+    border-radius: 25px;
+    /* Sudut membulat */
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    box-shadow: none;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form .form-control:focus {
+    border-color: #e74c3c;
+    /* Oranye lebih gelap saat fokus */
+    box-shadow: none;
+}
+
+
+/* Tombol Submit */
+
+.btn-submit {
+    background-color: #33e0ff;
+    /* Oranye */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #e74c3c;
+    /* Oranye lebih gelap saat hover */
+}
+
+
+/* Pastikan ikon Font Awesome terlihat */
+
+.fas,
+.far,
+.fab {
+    display: inline-block !important;
+    font-size: 1rem;
+}
+
+
+/* Card dalam ulasan */
+
+.swiper-slide .card {
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
